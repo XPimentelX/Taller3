@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<title>Taller</title>
+</head>
+<body>
+	<header>
+			<div class="titulo">
+				<h1>Taller de Pipo</h1>
+			</div>
+		</div>
+	</header>
+	<main>
+		<form id="frmC" name="formC" class="form">
+			<div class="cliente">
+				<div class="mb-3">
+					<label class="form-label">Nombre Completo</label>
+					<input type="text" name="nombre" class="form-control " id="nombre">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">DUI</label>
+					<input type="text" name="dui" class="form-control " id="dui">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">NIT</label>
+					<input type="text" name="nit" class="form-control " id="nit">
+				</div>
+			</div>	
+			<div class="taller">
+				<div class="mb-3">
+					<select class="form-select" name="marca" id="marca">
+						<option selected>Seleccione una marca</option>
+						<option value="Ford">Ford</option>
+						<option value="Toyota">Toyota</option>
+						<option value="Kia">Kia</option>
+						<option value="BMW">BMW</option>
+						<option value="Mercedez">Mercedez</option>
+						<option value="Mazda">Mazda</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<select class="form-select" name="modelo" id="modelo">
+						<option selected>Seleccione un Modelo</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Año</label>
+					<input type="text" name="anio" class="form-control" id="anio">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Color</label>
+					<input type="text" name="color" class="form-control" id="color">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Placa</label>
+					<input type="text" name="placa" class="form-control " id="placa" placeholder="P### A##, P ## A##, P  # A##">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Fallas</label>
+					<input type="text" name="fallas" class="form-control " id="fallas">
+				</div>
+			</div>
+			<div class="mb-3" id="enviar">
+				<input type="button" value="Enviar" name="enviar" onclick="enviarDatos()" class="form-control">	
+				<input type="button" value="ver datos" name="mostrar"  class="form-control" id="datos">
+			</div>
+		</form>
+		<div class="info" id="info">
+
+		</div>
+	</main>
+	<footer>
+		<div>
+			<p>Cristian Omar Pineda Campos</p>
+			<p>Angel Isaias Rodriguez Pimentel</p>
+		</div>
+	</footer>
+</body>
+<script src="js/practica.js"></script>
+</html>
