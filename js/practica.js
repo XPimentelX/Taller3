@@ -191,7 +191,7 @@ function valDui(dui){
     }
 }
 
-//Validacion del nit
+//Validacion del numero de nit
 function validarNit(nit){
     var valNit = /^[0-9]{4}-[0-9]{6}-[0-9]{3}-[0-9]{1}$/;
     if(valNit.test(nit)){
